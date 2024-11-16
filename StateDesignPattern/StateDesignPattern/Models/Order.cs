@@ -1,6 +1,4 @@
-﻿using StateDesignPattern.Enums;
-
-namespace StateDesignPattern.Models;
+﻿namespace StateDesignPattern.Models;
 
 public class Order
 {
@@ -8,5 +6,5 @@ public class Order
     public required string OrderTitle { get; set; }
     public Guid CustomerId { get; set; }
     public DateTime OrderDate { get; set; }
-    public OrderStateEnum OrderStatus { get; set; }
+    public string OrderStatus { get; set; }
 }
